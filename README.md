@@ -40,8 +40,8 @@ async def list_requests(update: Update, context):
     await update.message.reply_text(message)
 
 async def main():
-    # استبدال التوكن بالتوكن الخاص بك
-    application = Application.builder().token('7867010057:AAGIbZxs5ufrv_Q6DlDhILic0gVRGQZPCDQ').build()
+    # استبدل التوكن بالتوكن الخاص بك
+    application = Application.builder().token('YOUR_BOT_TOKEN').build()
 
     # تحضير المعالجين
     application.add_handler(CommandHandler('start', start))
